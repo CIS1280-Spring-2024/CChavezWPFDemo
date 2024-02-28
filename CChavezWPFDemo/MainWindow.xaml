@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CChavezWPFDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="550">
     <Grid>
+        <Label Content="First: " HorizontalAlignment="Left" Margin="66,32,0,0" VerticalAlignment="Top" Width="117" FontSize="18"/>
+        <TextBox x:Name="txbFirstName" HorizontalAlignment="Left" Height="23" Margin="212,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="Last: " HorizontalAlignment="Left" Margin="66,66,0,0" VerticalAlignment="Top" Width="117" FontSize="18"/>
+        <TextBox x:Name="txbLastName" HorizontalAlignment="Left" Height="23" Margin="212,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="Student Num" HorizontalAlignment="Left" Margin="66,105,0,0" VerticalAlignment="Top" Width="117" FontSize="18"/>
+        <TextBox x:Name="txbStudentNum" HorizontalAlignment="Left" Height="23" Margin="212,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="Major:" HorizontalAlignment="Left" Margin="66,139,0,0" VerticalAlignment="Top" Width="117" FontSize="18"/>
+        <TextBox x:Name="txbMajor" HorizontalAlignment="Left" Height="23" Margin="212,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+
+        <TextBlock x:Name="txbResults" HorizontalAlignment="Center" Margin="0,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="93" Width="498"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Center" Margin="0,352,0,0" VerticalAlignment="Top" Width="144" Click="btnSubmit_Click"/>
+
+        <TextBox x:Name="txbScore" HorizontalAlignment="Left" Height="23" Margin="212,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.142,0.306"/>
+        <TextBox x:Name="txbTitle" HorizontalAlignment="Left" Height="23" Margin="212,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.142,0.306"/>
+        <Button x:Name="btnAdd" Content="Add Score" HorizontalAlignment="Center" Margin="0,267,0,0" VerticalAlignment="Top" Width="74" Click="btnAdd_Click"/>
+        <ListBox x:Name="lbScores" HorizontalAlignment="Left" Height="132" Margin="379,197,0,0" VerticalAlignment="Top" Width="91"/>
+        <Label Content="Score" HorizontalAlignment="Left" Margin="70,178,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Title" HorizontalAlignment="Left" Margin="70,219,0,0" VerticalAlignment="Top" FontSize="18" Width="72"/>
 
     </Grid>
 </Window>
